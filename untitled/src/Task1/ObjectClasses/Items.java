@@ -2,9 +2,9 @@ package Task1.ObjectClasses;
 
 public class Items {
     private String name;
-    private float weight;
+    private double weight;
 
-    public Items(String nam, float weight)
+    public Items(String nam, double weight)
     {
         this.name = nam;
         this.weight = weight;
@@ -24,7 +24,7 @@ public class Items {
         return name;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
