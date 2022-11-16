@@ -14,8 +14,14 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
 
     @Override
     public void showInventory() {
+        for (Items item:userBackpack.getBackpack())
+        {
+            item.toString();
+        }
+
+        }
 
 
 
     }
-}
+

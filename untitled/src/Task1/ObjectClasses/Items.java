@@ -27,4 +27,9 @@ public class Items {
     public float getWeight() {
         return weight;
     }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }
