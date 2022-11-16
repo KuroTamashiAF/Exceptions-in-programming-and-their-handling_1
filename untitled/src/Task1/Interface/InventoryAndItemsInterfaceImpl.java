@@ -29,7 +29,9 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
     }
     @Override
     public void putItInTheInventory(Items item) {
-        getUserBackpack().getBackpack().add(item);
+        userBackpack.getBackpack().add(item);
+        userBackpack.setBeginWeight(item.getWeight());
+
     }
 
     @Override
@@ -40,6 +42,7 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
             {
                 if(item.getName() == name)
                 {
+                    userBackpack.setBeginWeight(-item.getWeight());
                     break;
                 }
                 index+=1;
@@ -51,8 +54,15 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
             }
             userBackpack.getBackpack().remove(index);
 
+
         }
+
+    @Override
+    public void viewInventoryOccupancy() {
+        System.out.println(userBackpack.getBeginWeight());
+
     }
+}
 
 
 

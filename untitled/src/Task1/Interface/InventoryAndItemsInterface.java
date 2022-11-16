@@ -6,6 +6,8 @@ public interface InventoryAndItemsInterface {
     void showInventory();
     void putItInTheInventory(Items item);
     void throwAwayItem(String name);
+    void viewInventoryOccupancy();
+
 
 
 }
