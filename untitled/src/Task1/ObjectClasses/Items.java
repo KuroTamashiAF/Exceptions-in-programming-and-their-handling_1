@@ -1,4 +1,4 @@
-package Task1;
+package Task1.ObjectClasses;
 
 public class Items {
     private String name;
