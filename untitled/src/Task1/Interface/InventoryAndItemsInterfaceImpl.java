@@ -11,7 +11,7 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
         this.userBackpack = userBackpack;
         this.userItems = userItems;
     }
-    
+
     @Override
     public void showInventory() {
 
