@@ -12,6 +12,14 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
         this.userItems = userItems;
     }
 
+    public Inventory getUserBackpack() {
+        return userBackpack;
+    }
+
+    public Items getUserItems() {
+        return userItems;
+    }
+
     @Override
     public void showInventory() {
         for (Items item:userBackpack.getBackpack())
@@ -19,9 +27,14 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
             item.toString();
         }
 
-        }
-
-
-
     }
+
+    @Override
+    public void putItInTheInventory(Items item) {
+        userBackpack.getBackpack().add(item);
+    }
+
+
+
+}
 
