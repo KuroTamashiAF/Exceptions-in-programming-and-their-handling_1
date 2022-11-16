@@ -28,12 +28,15 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
         }
 
     }
-
     @Override
     public void putItInTheInventory(Items item) {
         getUserBackpack().getBackpack().add(item);
     }
 
+    @Override
+    public void throwAwayItem() {
+
+    }
 
 
 }
