@@ -26,7 +26,6 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
         {
             System.out.println(item.toString());
         }
-
     }
     @Override
     public void putItInTheInventory(Items item) {
@@ -34,10 +33,27 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
     }
 
     @Override
-    public void throwAwayItem() {
+    public void throwAwayItem(String name) {
+        int index = 0;
 
+            for(Items item:userBackpack.getBackpack())
+            {
+                if(item.getName() == name)
+                {
+                    break;
+                }
+                index+=1;
+                if (index >= userBackpack.getBackpack().size())
+                {
+                    throw new RuntimeException("Такого элемента нет в инвентаре");
+                }
+
+            }
+            userBackpack.getBackpack().remove(index);
+
+        }
     }
 
 
-}
+
 

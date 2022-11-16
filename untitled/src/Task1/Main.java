@@ -16,5 +16,10 @@ public class Main {
         user.putItInTheInventory(item2);
         user.putItInTheInventory(item3);
         user.showInventory();
+        System.out.println("--------------------------");
+
+        user.throwAwayItem("RGD5");
+        user.showInventory();
+        System.out.println("--------------------------");
     }
 }
