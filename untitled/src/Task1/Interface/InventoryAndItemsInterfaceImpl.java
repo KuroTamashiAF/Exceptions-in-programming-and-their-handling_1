@@ -31,6 +31,8 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
     public void putItInTheInventory(Items item) {
         userBackpack.getBackpack().add(item);
         userBackpack.setBeginWeight(item.getWeight());
+       if (userBackpack.getBeginWeight() >userBackpack.getMaxCapacity())
+           throw new RuntimeException("Инвентарь полон");
 
     }
 
@@ -59,7 +61,8 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
 
     @Override
     public void viewInventoryOccupancy() {
-        System.out.println(userBackpack.getBeginWeight());
+
+        System.out.printf("Инвентарь заполнен на %.2f из %.2f \n", userBackpack.getBeginWeight(),userBackpack.getMaxCapacity());
 
     }
 }
