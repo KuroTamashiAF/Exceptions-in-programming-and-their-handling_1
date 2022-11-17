@@ -5,20 +5,14 @@ import Task1.ObjectClasses.Items;
 
 public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterface {
     private Inventory userBackpack;
-    //private Items userItems;
 
     public InventoryAndItemsInterfaceImpl(Inventory userBackpack /*Items userItems*/) {
         this.userBackpack = userBackpack;
-        //this.userItems = userItems;
     }
 
     public Inventory getUserBackpack() {
         return userBackpack;
     }
-
-//    public Items getUserItems() {
-//        return userItems;
-//    }
 
     @Override
     public void showInventory() {
@@ -26,6 +20,10 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
         {
             System.out.println(item.toString());
         }
+        if (userBackpack.getBackpack().size() == 0)
+            throw  new RuntimeException("Инвентарь пуст");
+
+
     }
     @Override
     public void putItInTheInventory(Items item) {
