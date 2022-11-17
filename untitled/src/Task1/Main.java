@@ -13,7 +13,7 @@ public class Main {
         Items item3 = new Items("RGD5", 0.5);
         //Items item4 = new Items("Panzer", 1000);
         InventoryAndItemsInterface user  = new InventoryAndItemsInterfaceImpl(HeroInventory);
-//        user.putItInTheInventory(item1);
+        user.putItInTheInventory(item1);
 //        user.putItInTheInventory(item2);
 //        user.putItInTheInventory(item3);
         //user.putItInTheInventory(item4);

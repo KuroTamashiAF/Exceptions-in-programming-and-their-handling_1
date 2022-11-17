@@ -16,12 +16,19 @@ public class InventoryAndItemsInterfaceImpl implements InventoryAndItemsInterfac
 
     @Override
     public void showInventory() {
-        for (Items item:userBackpack.getBackpack())
-        {
-            System.out.println(item.toString());
-        }
-        if (userBackpack.getBackpack().size() == 0)
+        if (userBackpack.getBackpack().isEmpty())
             throw  new RuntimeException("Инвентарь пуст");
+        else{
+            for (Items item:userBackpack.getBackpack())
+            {
+                System.out.println(item.toString());
+            }
+        }
+
+
+
+
+
 
 
     }
