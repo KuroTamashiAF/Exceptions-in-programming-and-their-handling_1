@@ -10,8 +10,8 @@ public class Container {
             for (int i = 0; i < arr1.length; i++) {
                 totalArr[i] = arr1[i] - arr2[i];
             }
-            return totalArr;
-        }
+            return totalArr;                                   //хотел еще написать перегрузку operator- как на
+        }                                                      // С++, но что то не нашел этого на просторах инета
     }
     public void showContainer(int []arr )
     {
