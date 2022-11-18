@@ -1,6 +1,6 @@
 package Task2;
 
-public class ContainerServiceImpl {
+public class Container {
     public int [] sum (int [] arr1, int [] arr2)
     {
         if (arr1.length != arr2.length)
@@ -13,7 +13,7 @@ public class ContainerServiceImpl {
             return totalArr;
         }
     }
-    public void showArr(int []arr )
+    public void showContainer(int []arr )
     {
         for (int i = 0; i < arr.length; i++) {
             System.out.printf("%d ", arr[i]);
@@ -22,10 +22,10 @@ public class ContainerServiceImpl {
 
 
     public static void main(String[] args) {
-        ContainerServiceImpl uwer = new ContainerServiceImpl();
+        Container uwer = new Container();
         int arr5[] = {1,2,3,4,5};
         int arr6[] = {1,2,3,4,5};
-        uwer.showArr(uwer.sum(arr5,arr6));
+        uwer.showContainer(uwer.sum(arr5,arr6));
 
 
 
