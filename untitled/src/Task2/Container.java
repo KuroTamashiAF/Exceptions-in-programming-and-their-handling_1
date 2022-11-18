@@ -1,7 +1,7 @@
 package Task2;
 
 public class Container {
-    public int [] sum (int [] arr1, int [] arr2)
+    public int [] difference(int [] arr1, int [] arr2)
     {
         if (arr1.length != arr2.length)
             throw new RuntimeException("Длина массивов различна");
@@ -18,5 +18,6 @@ public class Container {
         for (int i = 0; i < arr.length; i++) {
             System.out.printf("%d ", arr[i]);
         }
+        System.out.println();
     }
 }

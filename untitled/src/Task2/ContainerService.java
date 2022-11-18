@@ -1,5 +1,4 @@
 package Task2;
-import Task2.Container;
 import java.util.Scanner;
 
 public class ContainerService {
@@ -10,14 +9,18 @@ public class ContainerService {
         int size = sc.nextInt();
         int [] arr  = new int[size];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) Math.random()*100;
+            arr[i] = (int) (Math.random()*100);
         }
         return arr;
     }
     public void passingArguments(Container con)
     {
+        Container cons = new Container();
         int [] arr1 = fillArray();
+        cons.showContainer(arr1);
         int []arr2 = fillArray();
-        con.showContainer(con.sum(arr1,arr2 ));
+        cons.showContainer(arr2);
+        System.out.println("По элементная разница массивов: ");
+        con.showContainer(con.difference(arr1,arr2 ));
     }
 }
