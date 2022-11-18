@@ -16,7 +16,7 @@ public class ContainerService {
     public void passingArguments(Container con)
     {
         Container cons = new Container();
-        int [] arr1 = fillArray();
+        int [] arr1 =fillArray();
         cons.showContainer(arr1);
         int []arr2 = fillArray();
         cons.showContainer(arr2);
