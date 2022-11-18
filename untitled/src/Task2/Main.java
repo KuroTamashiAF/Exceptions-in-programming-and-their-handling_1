@@ -6,9 +6,6 @@ public class Main {
         ContainerService user = new ContainerService();
         user.passingArguments(con);
     }
-
-
-
     public static void main(String[] args) {
         Container con = new Container();
         pressButton(con);

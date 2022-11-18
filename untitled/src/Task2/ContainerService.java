@@ -6,9 +6,9 @@ public class ContainerService {
     {
         System.out.print("Введите размерность массива: ");
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int [] arr  = new int[size];
-        for (int i = 0; i < arr.length; i++) {
+        int size = sc.nextInt();                            // вот тут бы добавить проверку на то что
+        int [] arr  = new int[size];                        // ввел ли пользователь число, а не белеберду
+        for (int i = 0; i < arr.length; i++) {              // но я не пойму как...
             arr[i] = (int) (Math.random()*100);
         }
         return arr;
