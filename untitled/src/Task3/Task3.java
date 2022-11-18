@@ -22,8 +22,8 @@ public class Task3 {
         System.out.print("Введите размерность массива: ");
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
-        int [] arr  = new int[size];
-        for (int i = 0; i < arr.length; i++) {
+        int [] arr  = new int[size];                                   // тут надо проверить не ввел ли пользователь
+        for (int i = 0; i < arr.length; i++) {                         // строку или символ, но не додумался как это сделать
             arr[i] = (int) (Math.random()*100);
         }
         return arr;
