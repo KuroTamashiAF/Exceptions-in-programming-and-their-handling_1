@@ -13,7 +13,7 @@ public class Task3 {
             {
                 arr2[i]+=1;
             }
-            arr3[i] = arr1[i]/arr2[i];
+            arr3[i] = (int)(arr1[i]/arr2[i]);
         }
         return arr3;
     }
@@ -27,5 +27,11 @@ public class Task3 {
             arr[i] = (int) (Math.random()*100);
         }
         return arr;
+    }
+    public void showArr(int []arr ) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("%d ",arr[i]);
+        }
+        System.out.println();
     }
 }

@@ -5,7 +5,9 @@ public class Connect {
     {
         Task3 task = new Task3();
         int [] arr1 = task.fillArray();
+        task.showArr(arr1);
         int [] arr2 = task.fillArray();
-        task.quotient(arr1,arr2);
+        task.showArr(arr2);
+        task.showArr(task.quotient(arr1,arr2));
     }
 }
