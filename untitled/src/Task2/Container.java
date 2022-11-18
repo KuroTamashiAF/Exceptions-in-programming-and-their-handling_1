@@ -19,15 +19,4 @@ public class Container {
             System.out.printf("%d ", arr[i]);
         }
     }
-
-
-//    public static void main(String[] args) {
-//        Container uwer = new Container();
-//        int arr5[] = {1,2,3,4,5};
-//        int arr6[] = {1,2,3,4,5};
-//        uwer.showContainer(uwer.sum(arr5,arr6));
-//
-//
-//
-//    }
 }
